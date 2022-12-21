@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Simulator</title>
+    <link rel="shortcut icon" href="./resources/imgs/icons/game-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <script src="./resources/scripts/script.js"></script>
+</head>
+<body style="background-color: #f9de3f;">
+    <main>
+        <div class="pet-container">
+            <h1 id="petName">Cat</h1>
+            <div class="pet-img-container">
+                <img id="pet-img" onmousedown="changeSize1()" onmouseup="changeSize2()" onclick="addClick()" style="cursor: pointer;" src="./resources/imgs/pets/default-pet.png" alt="Pet">
+            </div>
+        </div>
+        <!--Side Shop, Clicks, Coins-->
+        <div class="side-items-container">
+            <div id="shop-container">
+                <img onclick="showShop()" style="cursor: pointer;" src="./resources/imgs/icons/shop-icon.png" alt="Shop">
+            </div>
+        <div onclick="showMysteryBox()" id="mystery-box" class="mystery-box-container">
+            <img src="./resources/imgs/icons/mystery-box-icon.png" alt="Mystery Box">
+        </div>
+            <div id="clicks-container">
+                <img src="./resources/imgs/icons/click-icon.png" alt="Clicks">
+                <p id="clicks">0</p>
+                <p id="sells-clicks" onclick="sellClicks()" style="cursor: pointer;">Sells Clicks</p>
+            </div>
+            <div id="coins-container">
+                <img src="./resources/imgs/icons/coin-icon.png" alt="Coins">
+                <p id="coins">0</p>
+            </div>
+            <div onclick="showSettings()" style="width: fit-content; position: relative; bottom: 40px; cursor: pointer;" id="settings-container">
+                <img style="height: 75px" src="./resources/imgs/icons/game-settings-icon.png" alt="Settings">
+            </div>
+        </div>
+        <div id="shop-container2" class="shop-container">
+            <h2>Shop</h2>
+            <div class="shop-items-container">
+                <div onclick="buyPet('monkey', './resources/imgs/pets/monkey-pet.png', 100)">
+                    <img src="./resources/imgs/pets/monkey-pet.png" alt="Pet">
+                    <p>Monkey</p>
+                    <p>2x Click Boost</p>
+                    <p>$100</p>
+                </div>
+                <div onclick="buyPet('unicorn', './resources/imgs/pets/unicorn-pet.png', 1000)">
+                    <img src="./resources/imgs/pets/unicorn-pet.png" alt="Pet">
+                    <p>Unicorn</p>
+                    <p>4x Click Boost</p>
+                    <p>$1000</p>
+                </div>
+                <div onclick="buyPet('eagle', './resources/imgs/pets/eagle-pet.png', 5000)">
+                    <img src="./resources/imgs/pets/eagle-pet.png" alt="Pet">
+                    <p>Eagle</p>
+                    <p>8x Click Boost</p>
+                    <p>$5000</p>
+                </div> 
+                <div onclick="buyPet('phoenix', './resources/imgs/pets/phoenix-pet.png', 10000)">
+                    <img src="./resources/imgs/pets/phoenix-pet.png" alt="Pet">
+                    <p>Phoenix</p>
+                    <p>12x Click Boost</p>
+                    <p>$10000</p>
+                </div> 
+                <div onclick="buyPet('bat', './resources/imgs/pets/bat-pet.png', 100000)">
+                    <img src="./resources/imgs/pets/bat-pet.png" alt="Pet">
+                    <p>Bat</p>
+                    <p>16x Click Boost</p>
+                    <p>$100000</p>
+                </div>   
+                <div onclick="buyPet('grim repear', './resources/imgs/pets/grim-reaper-pet.png', 500000)">
+                    <img src="./resources/imgs/pets/grim-reaper-pet.png" alt="Pet">
+                    <p>Grim Repear</p>
+                    <p>32x Click Boost</p>
+                    <p>$500000</p>
+                </div> 
+            </div>
+        </div>
+        <div id="mystery-box-container3" class="mystery-box-container2">
+            <h2>Mystery Box</h2>
+            <img style="height: 100px" src="./resources/imgs/icons/mystery-box-icon.png" alt="Mystery Box">
+            <h3>Inside the Box</h3>
+            <div class="item-probability">
+                <div>
+                    <h4>Dark Matter</h4>
+                    <img src="./resources/imgs/pets/dark-matter-pet.png" alt="Pet">
+                    <p>264x Coin Boost</p>
+                    <p>5% Chance</p>
+                </div>
+                <div>
+                    <h4>Ice Cube</h4>
+                    <img src="./resources/imgs/pets/ice-cube-pet.png" alt="Pet">
+                    <p>64x Coin Boost</p>
+                    <p>95% Chance</p>
+                </div>
+            </div>
+            <p onclick="buyMysteryBox()" id="buyMysteryBox">Buy for 1000000 coins</p>
+        </div>
+        <div id="settings-container2" style="visibility: hidden;"class="settings-containter">
+            <h2>Settings</h2>
+            <h3>Background Color</h3>
+            <form action="">
+                <label for="newBackgroundColor">Color:</label>
+                <input type="text" name="Color" id="newBackgroundColor" placeholder="Enter a color (no hex)">
+                <input id="changeColorBtn" onclick="changeBackgroundColor()" type="button" value="Save">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

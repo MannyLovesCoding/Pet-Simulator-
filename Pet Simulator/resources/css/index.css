@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: 'roboto';
+}
+
+.pet-container {
+    text-align: center;
+}
+
+.pet-container h1 {
+    font-size: 60px;
+    margin-top: 0;
+}
+
+.pet-container img {
+    height: 250px;
+}
+
+.side-items-container {
+   position: absolute;
+   top: 70px;
+   left: 10px;
+}
+#clicks{
+    margin-bottom: 0;
+}
+#clicks, #coins, #clicks-container p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#coins-container img {
+    height: 70px;
+    position: relative;
+    right: 5px;
+    bottom: 12px;
+}
+#clicks {
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+}
+
+#coins {
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+}
+
+#sells-clicks {
+    background-color:coral;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 0;
+    width: fit-content;
+}
+
+.shop-container {
+    margin: 0 auto;
+    visibility: hidden;
+}
+.shop-container h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.shop-container  {
+    background-color:coral;
+    width: fit-content;
+    border-radius: 5px;
+}
+.shop-container div {
+    cursor: pointer;
+    width: fit-content;
+}
+.shop-items-container div{
+    padding: 5px; 
+    border-radius: 5px;
+    margin: 10px;
+    border: 3px solid darkred;
+    background-color: #d2420d;;
+    display: inline-block;
+}
+
+.shop-items-container img{
+    height: 75px;
+    width: 75px;
+}
+
+.shop-items-container p {
+    margin: 0;
+    font-weight: bold;
+}
+.shop-container {
+    position: relative;
+    right: 75px;
+}
+.mystery-box-container {
+    cursor: pointer;
+}
+.mystery-box-container img{
+    height: 70px;
+}
+
+.mystery-box-container2 img {
+    height: 70px;
+
+}
+
+.mystery-box-container2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    visibility: hidden;
+}
+.mystery-box-container2 {
+    background-color:coral;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.mystery-box-container2 div {
+    width: fit-content;
+}
+
+.mystery-box-container2 div{
+    padding: 2px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 3px solid darkred;
+    background-color: #d2420d;;
+    display: inline-block;
+}
+
+.item-probability div {
+    border: 0px;
+    padding: 0;
+}
+
+#buyMysteryBox {
+    cursor: pointer;
+    background-color: #0f70e6;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+}
+
+.settings-containter {
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #d2420d;
+    width: fit-content;
+}
+
+.settings-containter input {
+    border-radius: 5px;
+    border-color: black;
+}
+
+#changeColorBtn {
+    background-color: #0f70e6;
+    color: white;
+    font-weight: bold;
+}
